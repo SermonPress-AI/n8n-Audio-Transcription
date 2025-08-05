@@ -46,4 +46,4 @@ Finally, the workflow will output the completed Google Doc, updating the WordPre
 
 ## Bug Workarounds
 
-- A workaround to the permission bug is that the same Google account is used for the creation of the document and the transcript approvals, and, when viewing the document, the user manually sets the Google Doc permissions.
+- A workaround to the permission bug is that the same Google account is used for the creation of the document and the transcript approvals, and, when viewing the document during the approval stages, the user manually sets the Google Doc permissions.

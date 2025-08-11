@@ -19,8 +19,12 @@ This workflow can take inputs of either a WordPress Post or an audio link, both 
 <img width="1816" height="831" alt="image" src="https://github.com/user-attachments/assets/29d9c647-c0d3-46e9-837a-a73d67028517" />
 - WordPress post is the input since the audio link form is deactivated
 
+--
+
 <img width="1821" height="838" alt="image" src="https://github.com/user-attachments/assets/ddb96dae-984d-4941-ad22-2855961db025" />
 - Audio link is the input since the WordPress post form is deactivated
+
+--
 
 When executing the workflow, a popup will appear.
 - If the WordPress post form was activated, enter the **post ID** into the text box.
@@ -29,9 +33,13 @@ When executing the workflow, a popup will appear.
 <img width="1216" height="1303" alt="image" src="https://github.com/user-attachments/assets/c7a20a1f-b8bb-4813-a4ab-5eeaa526e07d" />
 - Example of a popup that appears when the WP post form is activated.
 
+--
+
 If the input was a WP post, OpenAI will extract the information out of it, including the audio link within. Then, both inputs share the same path; turn the audio link into a file, uploading the file to AssemblyAI, transcribing the file, and outputting the transcription.
 
 <img width="1095" height="260" alt="image" src="https://github.com/user-attachments/assets/3a57e84b-4df0-40da-8c9a-3932b46af1be" />
+
+--
 
 Next, a Google Doc will be created and populated with the transcript, and then will be sent off for approval. You may edit the transcript and then click approve, which will send the updated transcript to OpenAI to summarize it. The summary will then be added to the document and sent for a final approval.
 
@@ -39,6 +47,8 @@ Next, a Google Doc will be created and populated with the transcript, and then w
 
 <img width="1657" height="782" alt="image" src="https://github.com/user-attachments/assets/26dd13b1-a9ad-4b93-92e2-adbe116e330d" />
 - This is what an approval email would look like
+
+--
 
 Finally, the workflow will output the completed Google Doc, updating the WordPress post if there was one to begin with.
 

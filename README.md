@@ -2,7 +2,7 @@
 Provides transcription capabilities and summary creation through n8n and AssemblyAI when starting with a WordPress post or audio link. Approvals will be sent via gmail and the output will be a google doc.
 
 <img width="2000" height="257" alt="image" src="https://github.com/user-attachments/assets/c91a17c7-d26a-49cc-a105-14de0aeffa06" />
--# What the workflow should look like
+- What the workflow should look like
 
 ---
 
@@ -17,17 +17,17 @@ The AssemblyAI Audio to Text Transcription n8n workflow uses AssemblyAI to trans
 This workflow can take inputs of either a WordPress Post or an audio link, both of which eventually ouput as a Google Doc, with the WP Post being updated if the input was a WP Post. To switch the input, deactivate the other form node and activate the desired node.
 
 <img width="1816" height="831" alt="image" src="https://github.com/user-attachments/assets/29d9c647-c0d3-46e9-837a-a73d67028517" />
--# WordPress post is the input since the audio link form is deactivated
+- WordPress post is the input since the audio link form is deactivated
 
 <img width="1821" height="838" alt="image" src="https://github.com/user-attachments/assets/ddb96dae-984d-4941-ad22-2855961db025" />
--# Audio link is the input since the WordPress post form is deactivated
+- Audio link is the input since the WordPress post form is deactivated
 
 When executing the workflow, a popup will appear.
 - If the WordPress post form was activated, enter the **post ID** into the text box.
 - If the audio link form was activated, enter the audio link into the text box.
 
 <img width="1216" height="1303" alt="image" src="https://github.com/user-attachments/assets/c7a20a1f-b8bb-4813-a4ab-5eeaa526e07d" />
--# Example of a popup that appears when the WP post form is activated.
+- Example of a popup that appears when the WP post form is activated.
 
 If the input was a WP post, OpenAI will extract the information out of it, including the audio link within. Then, both inputs share the same path; turn the audio link into a file, uploading the file to AssemblyAI, transcribing the file, and outputting the transcription.
 
@@ -38,7 +38,7 @@ Next, a Google Doc will be created and populated with the transcript, and then w
 <img width="1352" height="399" alt="image" src="https://github.com/user-attachments/assets/3f041582-84c3-4743-b02c-96ca132a2000" />
 
 <img width="1657" height="782" alt="image" src="https://github.com/user-attachments/assets/26dd13b1-a9ad-4b93-92e2-adbe116e330d" />
--# This is what an approval email would look like
+- This is what an approval email would look like
 
 Finally, the workflow will output the completed Google Doc, updating the WordPress post if there was one to begin with.
 
